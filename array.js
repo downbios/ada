@@ -19,8 +19,7 @@ console.log(pessoa);
 // EXTRAINDO UM UNICO TIPO DE DADO //
 console.log(pessoa[0]);
 
-
-pessoa[3] = false //modificando boleando do array mesmo em const //
+pessoa[3] = false; //modificando boleando do array mesmo em const //
 
 console.clear();
 
@@ -48,17 +47,15 @@ numeros.shift(); // remove o primeiro elemento do array
 
 console.clear();
 
-
 // BUSCAR ELEMENTOS EM UM ARRAY //
 
-console.log(numeros.includes(10)); // VERIFICA SE O NUMERO 10 ESTA EM MEU ARRAY // 
+console.log(numeros.includes(10)); // VERIFICA SE O NUMERO 10 ESTA EM MEU ARRAY //
 
 if (numeros.includes(10)) {
-    console.log("existe");
+  console.log("existe");
 } else {
-    console.log('nao existe');
+  console.log("nao existe");
 }
-
 
 const existeOnumero20 = numeros.includes(20);
 
@@ -74,23 +71,20 @@ const indicedoElementoY = numeros.lastIndexOf(10); // busca o indice do ultimo e
 
 // PERCORRER UMA ARRAY COM FOR
 
-
 const arr1 = [45, 50, 60, 65, 35, 50];
 
-
 for (let i = 0; i < arr1.length; i++) {
-    console.log(i, arr[i]);   // PEGA O INDICE E O ELEMENTO // 
+  console.log(i, arr[i]); // PEGA O INDICE E O ELEMENTO //
 }
-
 
 // for-of e for-in
 
-for ( elemento of aar1) {
-    console.log(elemento); // for-of percorre os elementos de um array
+for (elemento of aar1) {
+  console.log(elemento); // for-of percorre os elementos de um array
 }
 
-for ( elemento1 in arr1) {
-    console.log(elemento1); // for-in percorre os indices dos elementos de um array
+for (elemento1 in arr1) {
+  console.log(elemento1); // for-in percorre os indices dos elementos de um array
 }
 
 // ter atenção pois for-in retorna o indice, portanto o typeof dele será sempre uma string.

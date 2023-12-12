@@ -1,11 +1,10 @@
-const prompt = require ("readyline-sync")
+const prompt = require("readyline-sync");
 
 let i;
 
-for(i = 0; i < 5; i++) {
-    console.log(i);
+for (i = 0; i < 5; i++) {
+  console.log(i);
 }
-
 
 // exp1 = inicialização da variavel de controle
 // exp2 = condição de permanência do for
@@ -24,27 +23,26 @@ let maiorNumero = 0;
 
 let numeroInformado;
 
-for (let i = 0; i < 5; i++){
-    numeroInformado = Number(prompt.question('informe um numero positivo'));
+for (let i = 0; i < 5; i++) {
+  numeroInformado = Number(prompt.question("informe um numero positivo"));
 
-    if (numeroInformado > maiorNumero) {
-        maiorNumero = numeroInformado;
-    }
+  if (numeroInformado > maiorNumero) {
+    maiorNumero = numeroInformado;
+  }
 }
 
 console.log("Maior numero é: ", maiorNumero);
 
-
 //COMO PERCOORRER UMA STRING//
 
-const nome = "ian adson"
+const nome = "ian adson";
 
 console.log(nome.length);
 
 for (let i = 0; i < nome.length; i++) {
-    console.log(i);
+  console.log(i);
 
-    if (i === 4) {
-        break
-    };
+  if (i === 4) {
+    break;
+  }
 }
